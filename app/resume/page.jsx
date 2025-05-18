@@ -60,45 +60,34 @@ const about = {
 //experience data
 const experience = {
   icon: '/assets/resume/badge.svg',
-  title: 'My experience',
+  title: 'My experience & Project',
   description:
-  "lorem ispdl sit amt consectetur. adingpisicing elite reprehederit placear ipsm preferrance.",
+  "I have experience in internship with JOBBKK Dot Com Recruitment Company Limited for 8 months.",
   items: [
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Create a member dashbord page for job applicants on the JOBBKK website.",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Edit the Member Dashboard page for entrepreneurs on the JOBBKK website.",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Create a hotel job search page on the JOBBKK website.",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Create a Treading search page for the JOBBKK website backend system.",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Create an introductory website with Next.js",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
     {
-      company: "jobbkk dot com recruitment co. ltd",
+      company: "Build a CNN model for rice classification",
       position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
     },
-    {
-      company: "jobbkk dot com recruitment co. ltd",
-      position: "FrontEnd Developer",
-      duration: "October 2024 - April 2025"
-    }
   ]
 };
 
@@ -131,7 +120,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "lorem ispdl sit amt consectetur. adingpisicing elite reprehederit placear ipsm preferrance.",
+    "I have a skill in HTML 5, CSS3, JS, React.js, Next.js, tailwind.css and node.js ",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -186,7 +175,6 @@ const Resume = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About</TabsTrigger>
           </TabsList>
@@ -200,30 +188,27 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:ms-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-
+                 <ScrollArea className="h-[400px]">
+                  {/*
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {experience.items.map((item, index)=>{
                         return (
                           <li 
                             key={index} 
-                            className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
+                            className="bg-[#232329] h-[284px] py-6 px-10 rounded-xl 
                             flex flex-col justify-center items-center lg:items-start gap-1"
                           >
-                            <span className="text-accent">{item.duration}</span>
-                            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                              {item.position}
+                            <h3 className="text-accent text-xl max-w-[260px] min-h-[160px] text-center lg:text-left">
+                              {item.company}
                             </h3>
                             <div className="flex items-center gap-3">
-                              {/* dot */}
-                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                              <p className="text-white/60">{item.company}</p>
+                              <p className="text-white/60">{item.position}</p>
                             </div>
                           </li>
                         );
                       })}
                     </ul>
-
+                  */}
                 </ScrollArea>
               </div>
             </TabsContent>

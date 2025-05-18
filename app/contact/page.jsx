@@ -13,7 +13,7 @@ import {
   SelectTrigger, 
   SelectValue } from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
+import { FaPhoneAlt, FaEnvelope, FaDiscord, FaLine } from "react-icons/fa"
 import { Description } from "@radix-ui/react-dialog";
 
 const info = [
@@ -28,9 +28,14 @@ const info = [
     description: 'Thanaphon.maneerat@gmail.com',
   },
   {
-    icon: <FaMapMarkerAlt />,
-    title: 'Address',
-    description: 'Dont tall you okey',
+    icon: <FaLine />,
+    title: 'Line',
+    description: 'thanaphon maneerat',
+  },
+  {
+    icon: <FaDiscord />,
+    title: 'Discord ',
+    description: 'https://discord.gg/SHRkRuCX',
   },
 ]
 
@@ -48,6 +53,7 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
+          {/*
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">
@@ -77,7 +83,8 @@ const Contact = () => {
               </Select>
             </form>
           </div>
-          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
+          */}
+          <div className="flex-1 flex items-center xl:justify-start order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (

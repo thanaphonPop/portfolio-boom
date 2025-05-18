@@ -19,7 +19,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[700px] mb-9 text-white/80"> 
               I have experience in internship at jobbkk dot com recruitment company limited 
-              for 8 months and have a roll to be a Front end developer.
+              for 8 months and have a roll to be a Frontend developer.
             </p>
             {/* btn and socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -47,7 +47,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats />
     </section>
   );
 };

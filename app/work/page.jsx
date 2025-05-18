@@ -17,34 +17,45 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend project",
-    title: "project 1",
+    category: "Create a member dashbord page for job applicants on the JOBBKK website.",
+    title: "Frontend",
     description:
-      "Lorem ipsum dolor sit consectetur adipisicing elit.Cupiditate magnam modi.",
-    stack: [{name: "HTML 5",}, {name: "CSS 3",}, {name: "Javascript",}],
-    image: "/assets/work/thumb1.png",
+      "Create a page for job seekers who use the JOBBKK website that will have various systems to help users, such as a statistics system that can tell users various numbers, a job recommendation system to recommend jobs that are suitable for users, a menu for users to increase convenience, etc.",
+    stack: [{name: "HTML 5",}, {name: "CSS 3",}, {name: "Javascript",}, {name: "PHP",}],
+    image: "/assets/work/Screenshot_20250518_134512_Chrome.jpg",
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "Fullstack",
-    title: "project 1",
+    category: "Edit the Member Dashboard page for entrepreneurs on the JOBBKK website.",
+    title: "Frontend",
     description:
-      "Lorem ipsum dolor sit consectetur adipisicing elit.Cupiditate magnam modi.",
+      "Fix the page for entrepreneurs who use the JOBBKK website by adding a change function, adding a statistics system for entrepreneurs. Create a Tourguide system for entrepreneurs who use it for the first time.",
     stack: [{name: "HTML 5",}, {name: "CSS 3",}, {name: "Javascript",}],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/Dashbord_I.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "Backend",
-    title: "project 1",
+    category: "Create a hotel job search page on the JOBBKK website.",
+    title: "Frontend",
     description:
-      "Lorem ipsum dolor sit consectetur adipisicing elit.Cupiditate magnam modi.",
+      "Create a page for job seekers who want to find hotel jobs on the JOBBKK website.",
     stack: [{name: "HTML 5",}, {name: "CSS 3",}, {name: "Javascript",}],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/Hotel.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "Create a Treading search page for the JOBBKK website backend system.",
+    title: "Frontend",
+    description:
+      "Create a page for adding words from the back-end system. Add it to the Treading search system on the main page of the JOBBKK website.",
+    stack: [{name: "HTML 5",}, {name: "CSS 3",}, {name: "Javascript",}],
+    image: "/assets/work/Screenshot_20250518_134304_Chrome.jpg",
     live: "",
     github: "",
   },
@@ -79,6 +90,10 @@ const Work = () => {
               group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
               </h2>
+              <h3 className="text-[32px] font-bold leading-none text-white
+              group-hover:text-accent transition-all duration-500 capitalize">
+                {project.title}
+              </h3>
               <p className="text-white/60">
                 {project.description}
               </p>
@@ -95,8 +110,8 @@ const Work = () => {
               </ul>
               <div className="border-t-2 border-white/20">
                 {/* button */}
+                {/* 
                 <div className="flex items-center gap-4">
-                  {/* Live project button */}
                   <Link href={project.github}>
                     <TooltipProvider deleyDuration={100}>
                       <Tooltip>
@@ -113,7 +128,6 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>
 
-                  {/* github project button */}
                   <Link href={project.github}>
                     <TooltipProvider deleyDuration={100}>
                       <Tooltip>
@@ -130,7 +144,7 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>
                 </div>
-                
+                */}
               </div>
             </div>
           </div>
