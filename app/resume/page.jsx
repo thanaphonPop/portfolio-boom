@@ -20,7 +20,7 @@ import { motion } from 'framer-motion';
 const about = {
   title: 'About me',
   description:
-  "lorem ispdl sit amt consectetur. adingpisicing elite reprehederit placear ipsm preferrance.",
+  "I have experience in internship at jobbkk dot com recruitment company limited for 8 months and have a roll to be a Frontend developer.",
   info: [
     {
       fieldName: "Name",
